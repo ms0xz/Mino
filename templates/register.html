@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>{{title}} - {{slogan}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../static/js/jquery-1.11.2.js"></script>
+    <script src="../static/js/generatingUserData.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>{{description}}</h1>
+      <br>
+       <form method="POST">
+        <input type="name" name="username" id="username" placeholder= "{{input_username}}">
+        <input type="email" name="mail" id="mail" placeholder="{{input_mail}}">
+        <input type="password" name="password" id="password" placeholder="{{input_password}}">
+        
+        <button id="generating" class="btn btn-lg btn-primary btn-block" type="button">{{button_submit}}</button>
+</form>
+    </div>
+  </body>
+</html>
