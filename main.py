@@ -3,7 +3,8 @@
 # Author ms0xz          # 
 # github.com/ms0xz/Mino #
 # Free use              #
-#coding: utf-8          #
+# -*- coding: utf-8 -*- #
+#                       #
 #########################
 
 
@@ -19,11 +20,10 @@ from langs import es_ES as lang
 
 cur = MySQLdb.connect(host=configuration.mySQL['host'], user=configuration.mySQL['user'], passwd=configuration.mySQL['password'], db=configuration.mySQL['database'])
 Environment = Flask(__name__, template_folder="views", static_folder="assets")
-#custom_template = jinja2.ChoiceLoader([Environment.jinja_loader, jinja2.FileSystemLoader(['/mino/views']),])
-#Environment.jinja_loader = custom_template
 Environment.config['SECRET_KEY'] = 'ms0xz'
 bcrypt = Bcrypt(Environment)
 
+print("M I N O")
 @Environment.route('/')
 def index():
 
@@ -31,7 +31,9 @@ def index():
 		title = lang.index_title,
 		slogan = lang.index_slogan,
 		description = lang.index_description,
+		label_username = lang.index_label_username,
 		input_username = lang.index_input_username,
+		label_password = lang.index_label_password,
 		input_password = lang.index_input_password,
 		button_submit = lang.index_submit_button
 		)
@@ -75,6 +77,8 @@ def signin():
 		if bcrypt.check_password_hash(str(check[0][2]), passw) and user == check[0][1]:
 			session['logged'] = True
 			return jsonify(dict(redirect='/dashboard'))
+		
+			
 
 
 			cursor.close()

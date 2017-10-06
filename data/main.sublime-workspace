@@ -1,1 +1,686 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"input_password"
+			],
+			[
+				"input",
+				"input_username"
+			],
+			[
+				"cu",
+				"custom_template"
+			],
+			[
+				"index",
+				"index_submit_button"
+			],
+			[
+				"index_in",
+				"index_input_username"
+			],
+			[
+				"index_lab",
+				"index_label_username"
+			],
+			[
+				"pass",
+				"passw"
+			],
+			[
+				"check",
+				"check"
+			],
+			[
+				"json",
+				"jsonify"
+			],
+			[
+				"fetch",
+				"fetchone"
+			],
+			[
+				"fet",
+				"fetchone"
+			],
+			[
+				"jso",
+				"json"
+			],
+			[
+				"ch",
+				"check_password_hash"
+			],
+			[
+				"has",
+				"check_password_hash"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"excep",
+				"Exception"
+			],
+			[
+				"register",
+				"register_button_submit"
+			],
+			[
+				"register_input_",
+				"register_input_mail"
+			],
+			[
+				"register_input",
+				"register_input_password"
+			],
+			[
+				"register_inpu",
+				"register_input_username"
+			],
+			[
+				"regis",
+				"register_label_mail"
+			],
+			[
+				"pa",
+				"password_hash"
+			],
+			[
+				"register_mai",
+				"register_mail_name"
+			],
+			[
+				"register_la",
+				"register_label_mail"
+			],
+			[
+				"register_",
+				"register_label_password"
+			],
+			[
+				"reg",
+				"register_username_name"
+			],
+			[
+				"passwd",
+				"passwdcrypt"
+			],
+			[
+				"p",
+				"_password"
+			],
+			[
+				"pas",
+				"passwdcrypt"
+			],
+			[
+				"gener",
+				"generate_password_hash"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"f",
+				"form"
+			],
+			[
+				"gt",
+				"gettext"
+			],
+			[
+				"r",
+				"route"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"color",
+				"background-color"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"a",
+				"Application"
+			],
+			[
+				"w",
+				"web"
+			],
+			[
+				"ti",
+				"title\tTag"
+			],
+			[
+				"h",
+				"head\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/mso/Escritorio/mino/main.py",
+			"settings":
+			{
+				"buffer_size": 4001,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/mso/Escritorio/mino/langs/es_ES.py",
+			"settings":
+			{
+				"buffer_size": 1674,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/mso/Escritorio/mino/views/index.html",
+			"settings":
+			{
+				"buffer_size": 1301,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/mso/Escritorio/mino/views/register.html",
+			"settings":
+			{
+				"buffer_size": 1394,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/mso/Escritorio/mino/assets/js/generatingUserData.js",
+			"settings":
+			{
+				"buffer_size": 307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/mso/Escritorio/mino/assets/css/signin.css",
+			"settings":
+			{
+				"buffer_size": 759,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/mso/Escritorio/mino/assets/js/jquery-1.11.2.js",
+			"settings":
+			{
+				"buffer_size": 284184,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/mso/Escritorio/mino",
+		"/home/mso/Escritorio/mino/assets",
+		"/home/mso/Escritorio/mino/assets/css",
+		"/home/mso/Escritorio/mino/assets/js",
+		"/home/mso/Escritorio/mino/langs",
+		"/home/mso/Escritorio/mino/views"
+	],
+	"file_history":
+	[
+		"/home/mso/Escritorio/mino/langs/__init__.py",
+		"/home/mso/Escritorio/mino/main.py",
+		"/home/mso/Escritorio/tanksts/app.js",
+		"/home/mso/Escritorio/tanksts/app.ts",
+		"/home/mso/Escritorio/mino/controller/main.py",
+		"/home/mso/Escritorio/tanksts/package.json",
+		"/home/mso/Escritorio/mini/es_ES.py",
+		"/home/mso/Escritorio/mini/templates/dashboard.html",
+		"/home/mso/Escritorio/mini/main.py",
+		"/home/mso/Escritorio/mini/templates/index.html",
+		"/home/mso/Escritorio/mini/en_EN.py",
+		"/home/mso/Escritorio/mini/static/js/checkData.js",
+		"/home/mso/Escritorio/mini/static/js/generatingUserData.js",
+		"/home/mso/Escritorio/mini/templates/register.html",
+		"/home/mso/.cache/.fr-4sZCsw/web/server.py",
+		"/home/mso/Escritorio/mini/static/_assets/js/generatingUserData.js",
+		"/home/mso/Escritorio/mini/static/_assets/js/generatingUserData",
+		"/home/mso/Escritorio/mini/configuration.py",
+		"/home/mso/Escritorio/mini/templates/test4.html",
+		"/home/mso/Escritorio/test/app.py",
+		"/home/mso/Escritorio/test/translations/fr/LC_MESSAGES/messages.po",
+		"/home/mso/Escritorio/mini/templates/backup-index.html",
+		"/home/mso/Escritorio/test/templates/index.html",
+		"/home/mso/Escritorio/mini/mo/es_ES/LC_MESSAGES/es.po",
+		"/home/mso/Escritorio/mini/es.po",
+		"/home/mso/Escritorio/mini/e_ES.po",
+		"/home/mso/Escritorio/mini/mo/es_ES/LC_MESSAGES/main.py",
+		"/home/mso/Escritorio/mini/templates/base.html",
+		"/home/mso/Escritorio/test/static/js/scripts.js",
+		"/home/mso/Escritorio/mini/static/languages/es.json",
+		"/home/mso/Escritorio/test/static/translations/fr.json",
+		"/home/mso/Escritorio/mini/templates/test.html",
+		"/home/mso/Escritorio/mini/templates/test2.html",
+		"/home/mso/Escritorio/test/static/js/Gettext.js",
+		"/home/mso/Escritorio/test/templates/base.html",
+		"/home/mso/Escritorio/mini/static/translations/fr.json",
+		"/home/mso/Escritorio/mini/static/js/scripts.js",
+		"/home/mso/.cache/.fr-ONq6e2/pixeland-index/public/_assets/_css/pixel.min.css",
+		"/home/mso/Escritorio/mini/static/_assets/_css/pixel.min.css",
+		"/home/mso/Escritorio/mini/index.html",
+		"/home/mso/Escritorio/mini/public/index.html",
+		"/home/mso/Escritorio/mini/themes/css/general.css",
+		"/home/mso/Escritorio/mini/public/_css/general.css",
+		"/home/mso/Escritorio/mini/public/css/general.css",
+		"/home/mso/Escritorio/mini/themes/index.html",
+		"/home/mso/Escritorio/public/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"s",
+			"sausage",
+			"sausages",
+			"subfooter",
+			"LIBRE",
+			"input",
+			"register",
+			"rocket--input",
+			"login",
+			"habbos.png",
+			"habbos.",
+			"logo",
+			"subheader",
+			"h--",
+			"index--bo",
+			"subheader",
+			"--h",
+			"logo",
+			"--h",
+			"-hh",
+			"header",
+			"--hr",
+			"subheader",
+			"logo",
+			"subheader",
+			"font",
+			"ul",
+			"subheader",
+			"subnav",
+			"rocket--nav",
+			"fa fa",
+			"rocket--hr",
+			"rocket-hr",
+			"logo",
+			"3333",
+			"hiden"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/mso/Escritorio/mino/main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								426,
+								426
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/mso/Escritorio/mino/langs/es_ES.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								296,
+								296
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/mso/Escritorio/mino/views/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1100,
+								1100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/mso/Escritorio/mino/views/register.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/mso/Escritorio/mino/assets/js/generatingUserData.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/mso/Escritorio/mino/assets/css/signin.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 759,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/mso/Escritorio/mino/assets/js/jquery-1.11.2.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 284184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "main.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

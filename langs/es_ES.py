@@ -1,4 +1,4 @@
-#coding: utf-8
+# -*- coding: utf-8 -*-
 Texts = dict(
 	index_title = "MinoCMS",
 	index_slogan = "Bienvenido a MinoCMS",
