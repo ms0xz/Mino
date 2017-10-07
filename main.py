@@ -14,17 +14,20 @@ import jinja2
 import MySQLdb
 import configuration
 from flask_bcrypt import Bcrypt, check_password_hash
+from flask_caching import Cache
 from langs import es_ES as lang
 ##LANGUAGE SELECT, if you want to change the laguage you only change the import
 ##For example, i want to change to English i change "import es_ES as lang" to "import_en_EN as lang"
 
 cur = MySQLdb.connect(host=configuration.mySQL['host'], user=configuration.mySQL['user'], passwd=configuration.mySQL['password'], db=configuration.mySQL['database'])
 Environment = Flask(__name__, template_folder="views", static_folder="assets")
+cache = Cache(Environment, config={'CACHE_TYPE': 'simple'})
 Environment.config['SECRET_KEY'] = 'ms0xz'
 bcrypt = Bcrypt(Environment)
 
-print("M I N O")
+
 @Environment.route('/')
+@cache.cached(timeout=100)
 def index():
 
 	return render_template('index.html',
@@ -39,6 +42,7 @@ def index():
 		)
 		
 @Environment.route('/signup')
+@cache.cached(timeout=100)
 def signUp():
 	return render_template('register.html',
 		title = lang.register_title,
@@ -55,6 +59,7 @@ def signUp():
 		)
 
 @Environment.route('/dashboard')
+@cache.cached(timeout=100)
 def dashboard():
 	if session.get('logged'):
 		return render_template('dashboard.html')
@@ -142,4 +147,5 @@ def logout():
 
 
 if __name__ == "__main__":
+	print("M I N O")
 	Environment.run(port=8080, debug=True)
