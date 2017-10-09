@@ -175,7 +175,7 @@
 			"file": "/home/mso/Escritorio/mino/main.py",
 			"settings":
 			{
-				"buffer_size": 4001,
+				"buffer_size": 4176,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -268,11 +268,13 @@
 		"/home/mso/Escritorio/mino/assets",
 		"/home/mso/Escritorio/mino/assets/css",
 		"/home/mso/Escritorio/mino/assets/js",
+		"/home/mso/Escritorio/mino/data",
 		"/home/mso/Escritorio/mino/langs",
 		"/home/mso/Escritorio/mino/views"
 	],
 	"file_history":
 	[
+		"/home/mso/Escritorio/mino/data/main.py",
 		"/home/mso/Escritorio/mino/langs/__init__.py",
 		"/home/mso/Escritorio/mino/main.py",
 		"/home/mso/Escritorio/tanksts/app.js",
@@ -398,15 +400,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4001,
+						"buffer_size": 4176,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								426,
-								426
+								1055,
+								1055
 							]
 						],
 						"settings":
@@ -415,7 +417,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 88.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -447,7 +449,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -463,8 +465,8 @@
 						"selection":
 						[
 							[
-								1100,
-								1100
+								901,
+								901
 							]
 						],
 						"settings":
@@ -504,10 +506,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 273.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{

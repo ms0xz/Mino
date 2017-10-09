@@ -9,7 +9,7 @@
 
 
 ##FOR PYTHON3 use pip3
-from flask import Flask, render_template, json, request, url_for, redirect, jsonify, session
+from flask import Flask, flash, render_template, json, request, url_for, redirect, jsonify, session
 import jinja2
 import MySQLdb
 import configuration
@@ -27,40 +27,46 @@ bcrypt = Bcrypt(Environment)
 
 
 @Environment.route('/')
-@cache.cached(timeout=100)
-def index():
+#@cache.cached(timeout=100)
+def render_index():
 
-	return render_template('index.html',
-		title = lang.index_title,
-		slogan = lang.index_slogan,
-		description = lang.index_description,
-		label_username = lang.index_label_username,
-		input_username = lang.index_input_username,
-		label_password = lang.index_label_password,
-		input_password = lang.index_input_password,
-		button_submit = lang.index_submit_button
-		)
+	if session.get('logged'):
+		return redirect(url_for('render_dashboard'))
+	else:
+		return render_template('index.html',
+			title = lang.index_title,
+			slogan = lang.index_slogan,
+			description = lang.index_description,
+			label_username = lang.index_label_username,
+			input_username = lang.index_input_username,
+			label_password = lang.index_label_password,
+			input_password = lang.index_input_password,
+			button_submit = lang.index_submit_button
+			)
 		
 @Environment.route('/signup')
-@cache.cached(timeout=100)
-def signUp():
-	return render_template('register.html',
-		title = lang.register_title,
-		slogan = lang.register_slogan,
-		description = lang.register_description,
-		label_username = lang.register_label_username,
-		label_password = lang.register_label_password,
-		label_mail = lang.register_label_mail,
-		input_username = lang.register_input_username,
-		input_password = lang.register_input_password,
-		input_mail = lang.register_input_mail,
-		button_submit = lang.register_button_submit
+#@cache.cached(timeout=100)
+def render_signUp():
+	if session.get('logged'):
+		return redirect(url_for('render_dashboard'))
+	else:
+		return render_template('register.html',
+			title = lang.register_title,
+			slogan = lang.register_slogan,
+			description = lang.register_description,
+			label_username = lang.register_label_username,
+			label_password = lang.register_label_password,
+			label_mail = lang.register_label_mail,
+			input_username = lang.register_input_username,
+			input_password = lang.register_input_password,
+			input_mail = lang.register_input_mail,
+			button_submit = lang.register_button_submit
 
-		)
+			)
 
 @Environment.route('/dashboard')
-@cache.cached(timeout=100)
-def dashboard():
+#@cache.cached(timeout=100)
+def render_dashboard(usern=None):
 	if session.get('logged'):
 		return render_template('dashboard.html')
 	else:
@@ -69,8 +75,8 @@ def dashboard():
 
 
 @Environment.route('/checkUser', methods=['POST', 'GET'])
-def signin():
-	
+def signin():	
+
 	if request.method == "POST":
 		user = request.form["username"]
 		passw = request.form["password"]
@@ -81,6 +87,7 @@ def signin():
 		
 		if bcrypt.check_password_hash(str(check[0][2]), passw) and user == check[0][1]:
 			session['logged'] = True
+			flash("Iniciando sesion")
 			return jsonify(dict(redirect='/dashboard'))
 		
 			
@@ -137,13 +144,64 @@ def register():
 			cur.close()
 
 
-@Environment.route('/destroy', methods=['POST'])
+@Environment.route('/destroy')
 def logout():
+	
+	session.pop('logged', None)
+	flash("Cerrando sesion")
+	return redirect(url_for('render_index'))
+	
+
+
+##NEWS
+
+@Environment.route('/news', methods=['GET', 'POST'])
+def news():
+	cursor = cur.cursor()
+	cursor.execute('''SELECT author, title, short_body, body FROM news ORDER BY id DESC''')
+	rows =	cursor.fetchall()
+	return render_template('news.html')	
+
+	cursor.close()
+	cur.close()	
+	#return render_template('news.html')	
+
+
+@Environment.route('/news/post', methods=['GET', 'POST'])
+def news_posts():
 	if request.method == 'POST':
-		session.pop('logged', None)
-		return jsonify(dict(redirect='/'))
+		author = request.form['author']
+		title = request.form['title']
+		short_body = request.form['short_body']
+		body = request.form['body']
+
+		cursor = cur.cursor()
+		cursor.execute('''SELECT title FROM news WHERE title =%s ''', (title, ))
 
 
+
+		verif = cursor.fetchall()
+
+		if(len(verif) > 0):
+
+		   return "Ya hay una noticia con ese mismo titulo"
+
+
+		cursor.execute('''INSERT INTO news(author, title, short_body, body) VALUES(%s,%s,%s,%s)''',(author, title, short_body, body))
+		data = cursor.fetchall()
+		if len(data) is 0:
+			cur.commit()
+			return jsonify(dict(redirect='/dashboard'))
+		
+		else:
+			return str(data[0])
+
+
+	
+	return render_template('postnews.html')
+
+	cursor.close()
+	cur.close()
 
 
 if __name__ == "__main__":

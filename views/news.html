@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="{{url_for('static', filename='js/jquery-1.11.2.js') }}"></script>
+    <script src="{{url_for('static', filename='js/news.js') }}"></script>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>{{title}} - {{slogan}}</title>
+
+    <link href="{{url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <link href="{{url_for('static', filename='css/signin.css') }}" rel="stylesheet">  </head>
+
+  <body>
+
+    <div class="container">
+    {% if usern %}
+
+    <h1>{{usern}}</h1>
+      
+    </div> 
+    {% endif %}
+  </body>
+</html>
+
