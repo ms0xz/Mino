@@ -1,4 +1,10 @@
-# -*- coding: utf-8 -*-
+#########################
+# Author ms0xz          # 
+# github.com/ms0xz/Mino #
+# Free use              #
+# -*- coding: utf-8 -*- #
+#                       #
+#########################
 Texts = dict(
 	index_title = "MinoCMS",
 	index_slogan = "Bienvenido a MinoCMS",

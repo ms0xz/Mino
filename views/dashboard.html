@@ -1,8 +1,22 @@
-<h1>Hi!</h1>
-   
-    {% if usern %}
 
-    <h1>{{usern}}</h1>
-      
-    </div> 
-    {% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="refresh" content="5">
+    <script src="{{url_for('static', filename='js/jquery-1.11.2.js') }}"></script>
+    <script src="{{url_for('static', filename='js/checkData.js') }}"></script>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>{{title}} - {{slogan}}</title>
+</head>
+<body>
+	ID: {{id}} <p>
+	USERNAME: {{username}} </p><p>
+	MAIL: {{mail}}</p> <p>
+	MOTTO: {{motto}}
+</body>
+</html>

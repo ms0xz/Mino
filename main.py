@@ -6,28 +6,24 @@
 # -*- coding: utf-8 -*- #
 #                       #
 #########################
-
+##LANGUAGE SELECT, if you want to change the laguage you only change the import
+##For example, i want to change to English i change "import es_ES as lang" to "import en_EN as lang"
 
 ##FOR PYTHON3 use pip3
 from flask import Flask, flash, render_template, json, request, url_for, redirect, jsonify, session
-import jinja2
-import MySQLdb
-import configuration
 from flask_bcrypt import Bcrypt, check_password_hash
 from flask_caching import Cache
 from langs import es_ES as lang
-##LANGUAGE SELECT, if you want to change the laguage you only change the import
-##For example, i want to change to English i change "import es_ES as lang" to "import_en_EN as lang"
-
+import configuration
+import MySQLdb
+from flask_bcrypt import Bcrypt, check_password_hash
 cur = MySQLdb.connect(host=configuration.mySQL['host'], user=configuration.mySQL['user'], passwd=configuration.mySQL['password'], db=configuration.mySQL['database'])
 Environment = Flask(__name__, template_folder="views", static_folder="assets")
-cache = Cache(Environment, config={'CACHE_TYPE': 'simple'})
 Environment.config['SECRET_KEY'] = 'ms0xz'
 bcrypt = Bcrypt(Environment)
-
+cache = Cache(config={'CACHE_TYPE': 'simple'})
 
 @Environment.route('/')
-#@cache.cached(timeout=100)
 def render_index():
 
 	if session.get('logged'):
@@ -45,7 +41,6 @@ def render_index():
 			)
 		
 @Environment.route('/signup')
-#@cache.cached(timeout=100)
 def render_signUp():
 	if session.get('logged'):
 		return redirect(url_for('render_dashboard'))
@@ -63,20 +58,40 @@ def render_signUp():
 			button_submit = lang.register_button_submit
 
 			)
-
+@cache.cached(timeout=5)
 @Environment.route('/dashboard')
-#@cache.cached(timeout=100)
-def render_dashboard(usern=None):
+def render_dashboard():
 	if session.get('logged'):
-		return render_template('dashboard.html')
+		login.user = session.get('username')
+		cursor = cur.cursor()
+		cursor.execute(''' SELECT * FROM users WHERE username =%s ''', (login.user, ))
+		data = cursor.fetchall()
+		_id = data[0][0]
+		_username = data[0][1]
+		_mail = data[0][3]	
+		_motto = data[0][12]
+		return render_template('dashboard.html', id = _id, username = _username, mail = _mail, motto = _motto)
+
 	else:
 
-		return json.dumps({'error': 'Error al iniciar sesion, intentelo de nuevo'})
+		return redirect(url_for('render_index'))
 
+@Environment.route('/checkUser', methods=['POST'])
+def signin():
+	
+		return login()
 
-@Environment.route('/checkUser', methods=['POST', 'GET'])
-def signin():	
+		
 
+@Environment.route('/generatingData',methods=['POST'])
+def register():
+
+		return register()
+
+		
+
+##FUNCTIONS		
+def login():
 	if request.method == "POST":
 		user = request.form["username"]
 		passw = request.form["password"]
@@ -87,121 +102,49 @@ def signin():
 		
 		if bcrypt.check_password_hash(str(check[0][2]), passw) and user == check[0][1]:
 			session['logged'] = True
-			flash("Iniciando sesion")
+			session['username'] = user
 			return jsonify(dict(redirect='/dashboard'))
 		
-			
-
-
 			cursor.close()
 			cur.close()
 
-@Environment.route('/generatingData',methods=['POST','GET'])
+
 def register():
-
-		try:
-			username = request.form["username"]
-			password = request.form["password"]
-			mail = request.form["mail"]
+	username = request.form["username"]
+	password = request.form["password"]
+	mail = request.form["mail"]
 			
+	if username and password and mail:
+		cursor = cur.cursor()
+		cursor.execute('''SELECT username FROM users WHERE username =%s OR mail=%s''', (username,mail, ))
 
-			if username and password and mail:
-				cursor = cur.cursor()
-
-				
-				##VERIFICATION USER EXITS
-
-				cursor.execute('''SELECT username FROM users WHERE username =%s OR mail=%s''', (username,mail, ))
-
-				check = cursor.fetchall()
-				if(len(check) > 0):
-					return json.dumps({'message:' :'El nombre de usuario o correo ya esta ocupado'})
+		check = cursor.fetchall()
+		if(len(check) > 0):
+			return 'El nombre de usuario o correo ya esta ocupado'
 
 				##FOR PYTHON 3 USE password_hash = bcrypt.generate_password_hash(_password).decode('utf8-8')
-				password_hash = bcrypt.generate_password_hash(password)
-
-				cursor.execute('''INSERT INTO users(username, password, mail) VALUES(%s,%s,%s)''',(username, password_hash, mail))
-				data = cursor.fetchall()
-			
-
-
-				if len(data) is 0:
-					cur.commit()
-					return jsonify(dict(redirect='/'))
-
-			
-				else:
-					return json.dumps({'error':str(data[0])})
-
-
-			else:
-				return json.dumps({'html': 'No dejes espacios en blanco'})
-
-		except Exception as e:
-			return json.dumps({'error': str(e)})
-
-			cursor.close()
-			cur.close()
-
-
-@Environment.route('/destroy')
-def logout():
-	
-	session.pop('logged', None)
-	flash("Cerrando sesion")
-	return redirect(url_for('render_index'))
-	
-
-
-##NEWS
-
-@Environment.route('/news', methods=['GET', 'POST'])
-def news():
-	cursor = cur.cursor()
-	cursor.execute('''SELECT author, title, short_body, body FROM news ORDER BY id DESC''')
-	rows =	cursor.fetchall()
-	return render_template('news.html')	
-
-	cursor.close()
-	cur.close()	
-	#return render_template('news.html')	
-
-
-@Environment.route('/news/post', methods=['GET', 'POST'])
-def news_posts():
-	if request.method == 'POST':
-		author = request.form['author']
-		title = request.form['title']
-		short_body = request.form['short_body']
-		body = request.form['body']
-
-		cursor = cur.cursor()
-		cursor.execute('''SELECT title FROM news WHERE title =%s ''', (title, ))
-
-
-
-		verif = cursor.fetchall()
-
-		if(len(verif) > 0):
-
-		   return "Ya hay una noticia con ese mismo titulo"
-
-
-		cursor.execute('''INSERT INTO news(author, title, short_body, body) VALUES(%s,%s,%s,%s)''',(author, title, short_body, body))
+		password_hash = bcrypt.generate_password_hash(password)
+		cursor.execute('''INSERT INTO users(username, password, mail) VALUES(%s,%s,%s)''',(username, password_hash, mail))
 		data = cursor.fetchall()
+			
 		if len(data) is 0:
 			cur.commit()
-			return jsonify(dict(redirect='/dashboard'))
-		
-		else:
-			return str(data[0])
-
-
+			return jsonify(dict(redirect='/'))
 	
-	return render_template('postnews.html')
+		else:
+			return 'Error'
 
-	cursor.close()
-	cur.close()
+
+		
+
+		cursor.close()
+		cur.close()
+		
+@Environment.route('/session/destroy')
+def logout():
+	session.pop('username', None)
+	session.pop('logged', None)
+	return redirect(url_for('render_index'))
 
 
 if __name__ == "__main__":

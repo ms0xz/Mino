@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"da",
+				"getUserData"
+			],
+			[
+				"mail",
+				"input_mail"
+			],
+			[
+				"getUs",
+				"getUserData"
+			],
+			[
+				"get",
+				"getUsername"
+			],
+			[
+				"username",
+				"username"
+			],
+			[
+				"n",
+				"None"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"meth",
+				"method"
+			],
+			[
+				"passw",
+				"password"
+			],
+			[
+				"M",
+				"MySQLdb"
+			],
+			[
+				"No",
+				"None"
+			],
+			[
+				"exc",
+				"Exception"
+			],
+			[
+				"fet",
+				"fetchall"
+			],
+			[
+				"render",
+				"render_template"
+			],
+			[
+				"cl",
+				"close"
+			],
+			[
 				"in",
 				"input_password"
 			],
@@ -41,10 +101,6 @@
 			],
 			[
 				"fetch",
-				"fetchone"
-			],
-			[
-				"fet",
 				"fetchone"
 			],
 			[
@@ -175,16 +231,7 @@
 			"file": "/home/mso/Escritorio/mino/main.py",
 			"settings":
 			{
-				"buffer_size": 4176,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/mso/Escritorio/mino/langs/es_ES.py",
-			"settings":
-			{
-				"buffer_size": 1674,
+				"buffer_size": 4241,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -194,40 +241,49 @@
 			"settings":
 			{
 				"buffer_size": 1301,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/home/mso/Escritorio/mino/views/register.html",
+			"file": "/home/mso/Escritorio/mino/views/dashboard.html",
 			"settings":
 			{
-				"buffer_size": 1394,
+				"buffer_size": 12,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/mso/Escritorio/mino/assets/js/generatingUserData.js",
+			"file": "/home/mso/Escritorio/main.py",
 			"settings":
 			{
-				"buffer_size": 307,
+				"buffer_size": 4234,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/mso/Escritorio/mino/assets/css/signin.css",
+			"file": "/home/mso/Escritorio/mino/udata.py",
 			"settings":
 			{
-				"buffer_size": 759,
+				"buffer_size": 0,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/mso/Escritorio/mino/assets/js/jquery-1.11.2.js",
+			"file": "/home/mso/Escritorio/mino/__init__.py",
 			"settings":
 			{
-				"buffer_size": 284184,
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.sublime-project",
+			"settings":
+			{
+				"buffer_size": 69,
 				"line_ending": "Unix"
 			}
 		}
@@ -265,18 +321,38 @@
 	"expanded_folders":
 	[
 		"/home/mso/Escritorio/mino",
-		"/home/mso/Escritorio/mino/assets",
-		"/home/mso/Escritorio/mino/assets/css",
-		"/home/mso/Escritorio/mino/assets/js",
-		"/home/mso/Escritorio/mino/data",
-		"/home/mso/Escritorio/mino/langs",
 		"/home/mso/Escritorio/mino/views"
 	],
 	"file_history":
 	[
+		"/home/mso/Escritorio/main.py",
+		"/home/mso/Escritorio/udata.py",
+		"/home/mso/Escritorio/mino/mino/udata.py",
+		"/home/mso/Escritorio/mino/udata.py",
+		"/home/mso/Escritorio/mino/__init__.py",
+		"/home/mso/Escritorio/mino/data/udata.py",
+		"/home/mso/Escritorio/tanksPython/main.py",
+		"/home/mso/Escritorio/mino/langs/en_EN.py",
+		"/home/mso/Escritorio/mino/assets/css/bootstrap.min.css",
+		"/home/mso/Escritorio/mino/assets/css/signin.css",
+		"/home/mso/Escritorio/tanksPython/main.py+",
+		"/home/mso/Escritorio/mino/main.py",
+		"/home/mso/Escritorio/mino/data/__init__.py",
+		"/home/mso/Escritorio/mino/views/dashboard.html",
+		"/home/mso/Escritorio/mino/views/index.html",
+		"/home/mso/Escritorio/mino/langs/es_ES.py",
+		"/home/mso/Escritorio/mino/data/configuration.py",
+		"/home/mso/Escritorio/mino/data/main.sublime-project",
+		"/home/mso/Escritorio/mino/configuration.py",
+		"/home/mso/Escritorio/mino/assets/js/news.js",
+		"/home/mso/Escritorio/mino/views/postnews.html",
+		"/home/mso/Escritorio/mino/views/news.html",
+		"/home/mso/Escritorio/mino/assets/js/jquery-1.11.2.js",
+		"/home/mso/Escritorio/mino/assets/js/generatingUserData.js",
+		"/home/mso/Escritorio/mino/views/register.html",
+		"/home/mso/Escritorio/mino/views/postnewshtml",
 		"/home/mso/Escritorio/mino/data/main.py",
 		"/home/mso/Escritorio/mino/langs/__init__.py",
-		"/home/mso/Escritorio/mino/main.py",
 		"/home/mso/Escritorio/tanksts/app.js",
 		"/home/mso/Escritorio/tanksts/app.ts",
 		"/home/mso/Escritorio/mino/controller/main.py",
@@ -400,15 +476,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4176,
+						"buffer_size": 4241,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1055,
-								1055
+								2404,
+								2404
 							]
 						],
 						"settings":
@@ -417,7 +493,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 88.0,
+						"translation.y": 868.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -425,35 +501,6 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/home/mso/Escritorio/mino/langs/es_ES.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1674,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								296,
-								296
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "/home/mso/Escritorio/mino/views/index.html",
 					"semi_transient": false,
 					"settings":
@@ -465,8 +512,8 @@
 						"selection":
 						[
 							[
-								901,
-								901
+								0,
+								0
 							]
 						],
 						"settings":
@@ -483,42 +530,40 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/home/mso/Escritorio/mino/views/register.html",
+					"buffer": 2,
+					"file": "/home/mso/Escritorio/mino/views/dashboard.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1394,
+						"buffer_size": 12,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								312,
-								312
+								10,
+								10
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 273.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/home/mso/Escritorio/mino/assets/js/generatingUserData.js",
+					"buffer": 3,
+					"file": "/home/mso/Escritorio/main.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 307,
+						"buffer_size": 4234,
 						"regions":
 						{
 						},
@@ -531,7 +576,36 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/mso/Escritorio/mino/udata.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -543,11 +617,11 @@
 				},
 				{
 					"buffer": 5,
-					"file": "/home/mso/Escritorio/mino/assets/css/signin.css",
+					"file": "/home/mso/Escritorio/mino/__init__.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 759,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -560,9 +634,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -573,11 +645,11 @@
 				},
 				{
 					"buffer": 6,
-					"file": "/home/mso/Escritorio/mino/assets/js/jquery-1.11.2.js",
+					"file": "main.sublime-project",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 284184,
+						"buffer_size": 69,
 						"regions":
 						{
 						},
@@ -590,8 +662,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -680,7 +751,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 103.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
