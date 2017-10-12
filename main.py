@@ -70,7 +70,24 @@ def render_dashboard():
 		_username = data[0][1]
 		_mail = data[0][3]	
 		_motto = data[0][12]
-		return render_template('dashboard.html', id = _id, username = _username, mail = _mail, motto = _motto)
+		_credits = data[0][7]
+		_duckets = data[0][9]
+		_look = data[0][10]
+		return render_template('dashboard.html',
+		title = lang.dashboard_title, 
+		slogan = lang.dashboard_slogan,
+		label_username = lang.dashboard_label_username,
+		label_mail = lang.dashboard_label_mail,
+		label_motto = lang.dashboard_label_motto,
+		label_credits = lang.dashboard_label_credits,
+		label_duckets = lang.dashboard_label_duckets,
+		id = _id,
+		username = _username,
+		mail = _mail,
+		motto = _motto,
+		credits = _credits,
+		duckets = _duckets,
+		look = _look)
 
 	else:
 

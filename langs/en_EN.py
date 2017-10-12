@@ -1,5 +1,6 @@
 #coding: utf-8
 Texts = dict(
+	##INDEX
 	index_title = "MinoCMS",
 	index_slogan = "Welcome to MinoCMS",
 	index_description = "Sign In",
@@ -8,6 +9,7 @@ Texts = dict(
 	index_label_password = "Password",
 	index_input_password = "Password",
 	index_submit_button = "Enter",
+	##REGISTER
 	register_title = "MiniCMS",
 	register_slogan = "UA fast system and easy to use",
 	register_description = "Sign Up, is free and is required for explore the world",
@@ -17,7 +19,15 @@ Texts = dict(
 	register_password_name = "Password",
 	register_label_mail = "E-Mail",
 	register_mail_name = "E-Mail",
-	register_button_submit = "Finish"
+	register_button_submit = "Finish",
+	##DASHBOARD
+	dashboard_title = "MinoCMS",
+	dashboard_slogan = "Welome to the home page",
+	dashboard_label_username = "Username",
+	dashboard_label_mail = "E-Mail",
+	dashboard_label_motto = "Motto",
+	dashboard_label_credits = "Credits",
+	dashboard_label_duckets = "Duckets"
 	)
 index_title = Texts['index_title']
 index_slogan = Texts['index_slogan']
@@ -37,3 +47,10 @@ register_input_password = Texts['register_password_name']
 register_label_mail = Texts['register_label_mail']
 register_input_mail = Texts['register_mail_name']
 register_button_submit = Texts['register_button_submit']
+dashboard_title = Texts['dashboard_title']
+dashboard_slogan = Texts['dashboard_slogan']
+dashboard_label_username = Texts['dashboard_label_username']
+dashboard_label_mail = Texts['dashboard_label_mail']
+dashboard_label_motto = Texts['dashboard_label_motto']
+dashboard_label_credits = Texts['dashboard_label_credits']
+dashboard_label_duckets = Texts['dashboard_label_duckets']
